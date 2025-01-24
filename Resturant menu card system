@@ -1,0 +1,55 @@
+#include<stdio.h>
+struct MenuItem{
+ int choice,cupnum;
+ };
+
+int main()
+{
+    int ch,cupnum;
+    printf("\n\tMenu");
+    printf("\n\t\t1.COFFEE        BDT:15");
+    printf("\n\t\t2.TEA           BDT:10");
+    printf("\n\t\t3.COLD COFFEE   BDT:30");
+    printf("\n\t\t4.MILK SHAKE    BDT:50");
+    printf("\n\t\t5.Espresso     BDT:60");
+    printf("\n\n Enter Your choice  : ");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\nYou have selected Coffee!");
+        printf("\nEnter cupnum: ");
+        scanf("%d",&cupnum);
+        printf("\nTotal amount : %d",(cupnum*15));
+        break;
+     case 2:
+        printf("\nYou have selected Tea!");
+        printf("\nEnter The cupnum: ");
+        scanf("%d",&cupnum);
+        printf("\nTotal amount : %d",(cupnum*10));
+        break;
+     case 3:
+        printf("\nYou have selected Cold Coffee!");
+        printf("\nEnter The cupnum: ");
+        scanf("%d",&cupnum);
+        printf("\nTotal amount : %d",(cupnum*30));
+        break;
+     case 4:
+        printf("\nYou have selected Milk Shake");
+        printf("\nEnter The cupnum: ");
+        scanf("%d",&cupnum);
+        printf("\nTotal amount : %d",(cupnum*50));
+        break;
+    case 5:
+        printf("\nYou have selected Espresso");
+        printf("\nEnter The cupnum: ");
+        scanf("%d",&cupnum);
+        printf("\nTotal amount : %d",(cupnum*60));
+   break;
+     default:
+          printf("\nNot avilable this time!");
+          break;
+
+    }
+    return 0;
+}
